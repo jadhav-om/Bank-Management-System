@@ -1,0 +1,49 @@
+com/getext/utils/ocr/TextRecognitionException.java
+ com.getext.utils.ocr.TextRecognitionException
+com/getext/room/database/GetextDatabase.java
+ com.getext.room.database.GetextDatabase
+com/getext/GetextApplication.java
+ com.getext.GetextApplication
+com/getext/activity/HomeActivity.java
+ com.getext.activity.HomeActivity
+ com.getext.activity.HomeActivity$1
+com/getext/activity/ImagePreviewActivity.java
+ com.getext.activity.ImagePreviewActivity
+com/getext/firebase/FirebaseAnalyticsHelper.java
+ com.getext.firebase.FirebaseAnalyticsHelper
+com/getext/keys/AppKeys.java
+ com.getext.keys.AppKeys
+com/getext/room/dao/RecognizedTextDao.java
+ com.getext.room.dao.RecognizedTextDao
+com/getext/utils/logger/Logger.java
+ com.getext.utils.logger.Logger
+com/getext/activity/PrivacyPolicyActivity.java
+ com.getext.activity.PrivacyPolicyActivity
+com/getext/BuildConfig.java
+ com.getext.BuildConfig
+com/getext/activity/ScanResultActivity.java
+ com.getext.activity.ScanResultActivity
+com/getext/utils/AppUtils.java
+ com.getext.utils.AppUtils
+com/getext/utils/preferences/SharedPreferenceHelper.java
+ com.getext.utils.preferences.SharedPreferenceHelper
+com/getext/room/entity/RecognizedText.java
+ com.getext.room.entity.RecognizedText
+com/getext/repository/RecognizedTextRepository.java
+ com.getext.repository.RecognizedTextRepository
+com/getext/activity/viewmodel/HomeActivityViewModel.java
+ com.getext.activity.viewmodel.HomeActivityViewModel
+com/getext/adapter/RecognizedTextAdapter.java
+ com.getext.adapter.RecognizedTextAdapter
+ com.getext.adapter.RecognizedTextAdapter$1
+ com.getext.adapter.RecognizedTextAdapter$BannerAdViewHolder
+ com.getext.adapter.RecognizedTextAdapter$MenuItemClickListener
+ com.getext.adapter.RecognizedTextAdapter$RecognizedTextViewHolder
+com/getext/activity/SplashScreenActivity.java
+ com.getext.activity.SplashScreenActivity
+com/getext/firebase/FirebaseMessagingService.java
+ com.getext.firebase.FirebaseMessagingService
+com/getext/activity/EditImageActivity.java
+ com.getext.activity.EditImageActivity
+com/getext/utils/ocr/TextRecognizer.java
+ com.getext.utils.ocr.TextRecognizer

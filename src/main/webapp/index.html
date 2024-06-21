@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MyBank - Login</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #555;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group label {
+      flex: 0 0 100px;
+      margin-right: 10px;
+      text-align: right;
+      color: #777;
+    }
+
+    .form-group input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .password-toggle {
+      position: relative;
+    }
+
+    .password-toggle i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #777;
+    }
+
+    .password-toggle i:hover {
+      color: #333;
+    }
+
+    .login-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #0080ff;
+      color: #fff;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .login-button:hover {
+      background-color: #005cbf;
+    }
+
+    .create-account-option {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .create-account-option a {
+      color: #0080ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to MyBank</h2>
+    <form action="Login" method="post">
+      <div class="form-group">
+        <label for="username"><i class="fas fa-user"></i> Username</label>
+        <input type="text" id="username" name="username"placeholder="Enter your username" required>
+      </div>
+      <div class="form-group password-toggle">
+        <label for="password"><i class="fas fa-lock"></i> Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <i class="fas fa-eye-slash toggle-icon"></i>
+      </div>
+      <button type="submit" class="login-button">Login</button>
+      <p class="create-account-option">Don't have an account? <a href="create.html">Create Account</a></p>
+    </form>
+  </div>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <script>
+    const toggleIcon = document.querySelector('.toggle-icon');
+    const passwordInput = document.querySelector('#password');
+
+    toggleIcon.addEventListener('click', function () {
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleIcon.classList.remove('fa-eye-slash');
+        toggleIcon.classList.add('fa-eye');
+      } else {
+        passwordInput.type = 'password';
+        toggleIcon.classList.remove('fa-eye');
+        toggleIcon.classList.add('fa-eye-slash');
+      }
+    });
+  </script>
+</body>
+</html>

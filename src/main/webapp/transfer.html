@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Transfer Money - MYBANK</title>
+  <link rel="stylesheet" type="text/css" href="StyleTransfer.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="bank-name">MYBANK</h2>
+    <div class="form-container">
+      <h3>Transfer Money</h3>
+      <form action="transfer" method="post">
+      
+        <div class="form-group">
+          <label for="toAccount">To Account:</label>
+          <input type="text" id="toAccount" name="receiverAccount" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" name="amount" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Transfer">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

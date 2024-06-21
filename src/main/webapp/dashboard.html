@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MyBank - Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #0080ff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      animation: slideIn 0.5s forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tagline {
+      font-size: 20px;
+      color: #fff;
+      margin-top: 10px;
+      animation: fadeIn 1s forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .dashboard {
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .column {
+      flex: 0 0 calc(50% - 40px);
+      margin: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #555;
+    }
+
+    p {
+      color: #777;
+      line-height: 1.5;
+    }
+
+    .footer {
+      background-color: #fff;
+      padding: 10px;
+      text-align: center;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    .animated-button {
+      display: inline-block;
+      position: relative;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #0080ff;
+      color: #fff;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+      text-decoration: none; /* Add this line */
+    }
+
+    .animated-button:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffb700;
+      transform: translateX(-100%);
+      transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      z-index: -1;
+    }
+
+    .animated-button:hover:before {
+      transform: translateX(0);
+    }
+
+    .about-us {
+      background-color: #f1f1f1;
+      padding: 40px 0;
+    }
+
+    .about-us-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .about-us-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about-us-text {
+      color: #555;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .contact-us {
+      background-color: #0080ff;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    .contact-us-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .contact-us-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-us-text {
+      color: #fff;
+      line-height: 1.6;
+      text-align: center;
+      color: #ffb700; /* Change the color here */
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .contact-info-item {
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .contact-info-item i {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .contact-info-item p {
+      margin: 0;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to MyBank</h1>
+    <p class="tagline">Your Trusted Banking Partner</p>
+  </header>
+
+  <section class="dashboard">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h2>Deposit</h2>
+            <a href="deposit.html" class="animated-button">Deposit</a> <!-- Add anchor tag here -->
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <h2>Withdraw</h2>
+            <a href="withdraw.html" class="animated-button">Withdraw</a> <!-- Add anchor tag here -->
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <h2>Transfer</h2>
+            <a href="transfer.html" class="animated-button">Transfer</a> <!-- Add anchor tag here -->
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <h2>View Balance</h2>
+            <a href="viewbal.html" class="animated-button">View Balance</a> <!-- Add anchor tag here -->
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us">
+    <div class="about-us-content">
+      <div class="about-us-heading">
+        <h2>About Us</h2>
+      </div>
+      <div class="about-us-text">
+        <p>MyBank is a leading financial institution committed to providing excellent banking services. We strive to empower individuals and businesses by offering secure, convenient, and innovative banking solutions.</p>
+        <p>At MyBank, we prioritize customer satisfaction and aim to build long-lasting relationships based on trust and reliability. Our dedicated team of professionals is here to assist you in achieving your financial goals and ensuring a seamless banking experience.</p>
+        <p>Experience the difference with MyBank and embark on a journey towards financial success.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <div class="contact-us-content">
+      <div class="contact-us-heading">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-us-text">
+        <p>We'd love to hear from you! Contact us for any inquiries or assistance.</p>
+      </div>
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <p>omjadhav.rcpit@gmail.com</p>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-phone"></i>
+          <p>+91 9623160472</p>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>At Post Bhatpura, Shirpur, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 MyBank. All rights reserved.</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <script>
+    const animatedButtons = document.querySelectorAll('.animated-button');
+    animatedButtons.forEach(button => {
+      button.addEventListener('mouseover', () => {
+        button.style.color = '#0080ff';
+      });
+      button.addEventListener('mouseout', () => {
+        button.style.color = '#fff';
+      });
+    });
+  </script>
+</body>
+</html>
